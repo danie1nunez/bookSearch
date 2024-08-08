@@ -3,16 +3,16 @@ const typeDefs = `
     _id: ID
     username: String
     email: String
-    password: String
     savedBooks: [Book]!
   }
 
-  type Book{
+  type Book {
     bookId: ID!
     description: String
     image: String
     link: String
     title: String
+    authors: [String]
   }
 
   type Auth {
